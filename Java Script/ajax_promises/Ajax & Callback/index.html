@@ -1,0 +1,129 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX & Callback</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			cursor: pointer;
+			padding: 4px 0px;
+		}
+		li:hover {
+			background-color: lightgray;
+		}
+		form {
+			width: 400px;
+			margin: auto;
+		}
+
+		.create, .edit {
+			border: 2px solid gray;
+			margin: 10px 0px;
+		}
+
+		.create h3, .edit h3 {
+			text-align: center;
+		}
+
+		.input-group input {
+			width: 100%;
+		}
+
+		.input-group {
+			padding: 4px 0px;
+		}
+
+		#posalji {
+			width: 200px;
+			padding: 5px 10px;
+			background: #3498db;
+			border: none;
+			margin: 10px 0px;
+			color: #fff;
+		}
+
+		input[type='submit'] {
+			margin: 20px 0px;
+		}
+
+		.fetchdata-btn {
+			width: 100%;
+			padding: 20px 0px;
+			text-align: center;
+		}
+
+		.zadatak {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="zadatak">
+		<h4>Opis zadatka</h4>
+		<p>U nastavku je napravljen duplikat forme sa ID: <b>forma2</b> i u toj formi upisati vrednosti koje dobijemo kada kliknemo da neki od elemenata iz liste. I nakon toga je potrebno poslati zahtev ka serveru sa vrednostima koje smo upsali u formu (#forma2) i koje predhodno mozemo promeniti po svojoj volji.<br><br>
+		<b>Koristiti konzolu kao alat za DEBUG i prikaz podataka.</b>
+		<br>
+		<b>Kada otvorimo Development Tools > Network , tu mozemo da pratimo zahteve koje saljemo serveru.</b>
+		<br><br>
+
+		Metoda: <b>PATCH</b> <br>
+		URL: <i><b>https://jsonplaceholder.typicode.com/posts/:id</b></i> (gde <i>:id</i> predstavlja ID tog posta na koji smo kliknuli).
+		</p>
+	</div>
+
+	<div class="fetchdata-btn">
+		<input id="posalji" type="button" value="get data">
+	</div>
+	
+	<ul id="lista">
+		
+	</ul>
+
+	<div class="create">
+		<h3>Create new post</h3>
+		<form id="forma1" action="/" >
+			<div class="input-group">
+				<label for="user">UserId</label>
+				<input id="userId" type="text">
+			</div>
+			<div class="input-group">
+				<label for="title">Title</label>
+				<input id="title" type="text">
+			</div>
+			<div class="input-group">
+				<label for="body">Content</label>
+				<input id="body" type="text">
+			</div>
+
+			<input type="submit" value="Add">
+		</form>
+	</div>
+
+	<div class="edit">
+		<h3>Edit post</h3>
+		<form id="forma2" action="" >
+			<div class="input-group">
+				<label for="user">UserId</label>
+				<input id="userId2" type="text">
+			</div>
+			<div class="input-group">
+				<label for="title">Title</label>
+				<input id="title2" type="text">
+			</div>
+			<div class="input-group">
+				<label for="body">Content</label>
+				<input id="body2" type="text">
+			</div>
+
+			<input type="submit" value="Update">
+		</form>
+	</div>
+	
+	
+	<script src="js/javascript.js"></script>
+</body>
+</html>
