@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/zadatak%2011.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:01 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+.style2 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style3 {
+	font-size: 16px;
+	font-family: "Courier New", Courier, mono;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="79%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Zadatak 11:<a></a> <a href="../zadaci_stringovi.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p align="justify" class="style2">main ()<br />
+        {<br />
+        char  str[20];<br />
+        void  kodiraj(),bezponavljanja(),izbacinule();<br />
+        printf(&quot;\nUnesi  string?&quot;);<br />
+        scanf{&quot;%s&quot;  ,str); izbacinule(str);<br />
+        bezponavljanja(str);<br />
+        kodiraj(str);<br />
+        printf(&quot;\nKodiran  tekst%s\n&quot; ,str);<br />
+        }</p>
+      <p align="justify" class="style2">void  kodiraj( char *s)<br />
+        {<br />
+        static  char kod[]=&quot;-@#$%^&amp;*()_+=.&rsquo;:;&rsquo;[\/?&lt;&gt;,][&ldquo;; <br />
+        while(*s)<br />
+        { <br />
+        s=kod[*s-'a']; <br />
+        s++; <br />
+        }<br />
+        }</p>
+      <p align="justify" class="style2">void bezponavljanja(char *s)<br />
+        (<br />
+        char  *t=s+l;<br />
+        while  (*t)<br />
+   if(*s==*t)<br />
+   t++;<br />
+   else<br />
+        { <br />
+        s++; <br />
+        *s=*t;<br />
+        t++; <br />
+        } /*ili konciznije  ++s=t++; */<br />
+        s++; s='\0';&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; /* ili *++s='\O'; */<br />
+        }</p>
+      <p align="justify" class="style2">void izbacinule(char *s)<br />
+        (<br />
+        char  *t=s;<br />
+        while  (*t)<br />
+        if (*t=='0&rsquo;)<br />
+   t++; <br />
+   else s++=t++<br />
+        *s='\0&rsquo;;<br />
+        } </p>      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/zadatak%2011.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:01 GMT -->
+</html>

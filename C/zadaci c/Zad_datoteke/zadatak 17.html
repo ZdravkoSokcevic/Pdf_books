@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%2017.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style15 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+.style16 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="87%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Zadatak 17:<a></a> <a href="../zadaci_datoteke.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style15">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;  //Zbog exit()<br />
+        #include&lt;conio.h&gt;</p>
+      <p class="style15">void main() <br />
+        {<br />
+        FILE *ulaz;<br />
+        int c, broj_znakova = 0, broj_malih_slova=0;<br />
+        if((ulaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\test1.txt&quot;, &quot;r&quot;)) == NULL)<br />
+        printf(&quot;Ne mogu da otvorim datoteku \&quot;test1.txt\&quot;!\n&quot;);<br />
+        exit(1);<br />
+        while((c = getc(ulaz)) != EOF)<br /> 
+        {<br />
+        putchar(c);<br />
+        if(c!=' ')<br />
+        {<br />
+        broj_znakova++;<br />
+        }<br />
+        if(c&gt;='a' &amp;&amp; c&lt;='z' &amp;&amp; c!='w' &amp;&amp; c!='x' &amp;&amp; c!='y')<br />
+        {<br />
+        broj_malih_slova++;<br />
+        }<br />
+        }<br />
+        printf(&quot;\nBroj znakova u datoteci \&quot;poruka.txt\&quot; je %d.\n&quot;, broj_znakova);<br />
+        printf(&quot;\nBroj malih slova u datoteci \&quot;poruka.txt\&quot; je %d.\n&quot;, broj_malih_slova);<br />
+        fclose(ulaz);<br />
+        getch();<br />
+        }</p>      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%2017.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

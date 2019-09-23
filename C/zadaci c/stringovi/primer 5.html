@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/primer%205.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style17 {
+	font-size: 16px;
+	font-family: "Courier New", Courier, mono;
+}
+.style18 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="82%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Primer 5 :<a></a> <a href="../zadaci_stringovi.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style17">#include&lt;stdio.h&gt;<br />
+        #include&lt;conio.h&gt;<br />
+        void main() {<br />
+  if(palindrom(slova(&quot;ana voli milovana&quot;)))<br />
+  printf(&quot;String \&quot;ana voli milovana\&quot; je palindrom.\n&quot;);<br />
+        else 
+        printf(&quot;String \&quot;ana voli milovana\&quot; nije palindrom.\n&quot;);<br />
+        if(palindrom(slova(&quot;Ana voli Milovana&quot;)))<br />
+        printf(&quot;String \&quot;Ana voli Milovana\&quot; je palindrom.\n&quot;);<br />
+        else 
+        printf(&quot;String \&quot;Ana voli Milovana\&quot; nije palindrom.\n&quot;);<br />
+        getch();<br />
+        }<br />
+      char *slova(char *s) <br />
+      {<br />
+        static char a[80], *pom;<br />
+        pom = a;<br />
+        while(*s) {<br />
+        int uslov = (*s &gt;= 'a' &amp;&amp; *s &lt;= 'z') || (*s &gt;= 'A' &amp;&amp; *s &lt;= 'Z');<br />
+        if(uslov)<br />
+        *pom++ = *s;<br />
+        s++;<br />
+        }<br />
+        *pom = '\0';<br />
+        return a;<br />
+        }<br />
+        int palindrom(char *s)<br /> 
+        {<br />
+        char *s1 = s;<br />
+        while(*s1)<br />
+        s1++;<br />
+        s1--;<br />
+        while(s &lt; s1)<br />
+        if(*s++ != *s1--)<br />
+        return 0;<br />
+        return 1;<br />
+        }</p>
+      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/primer%205.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/zadatak%2024.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+.style2 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style11 {font-size: 16px}
+.style14 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body>
+<table width="84%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Zadatak 24:<a></a> <a href="../zadaci_stringovi.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style2"><span class="style11">#include  &lt;string.h&gt;<br />
+#include  &lt;stdio.h&gt;<br />
+#define  DUZINA 81&nbsp;&nbsp;&nbsp;&nbsp; <span class="style14">/* maksimalna du&#382;ina  stringa, uklju&#269;uju&#263;i nulti znak */</span><br />
+#define  MAX 50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style14">/* maksimalni broj stringova  */</span><br />
+#defme  STOP &ldquo;&rdquo;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style14">/*prazan string*/</span><br />
+main()<br />
+{<br />
+ void sort();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+static  char str[MAX][DUZINA]; <span class="style14">/* niz za registrovanje stringova */</span><br />
+ char *pokstr[MAX]; <span class="style14">/* niz pokazivackih  promenjivih */</span><br />
+int  i=0,j;<br />
+printf(&quot;Unesite  do %d stringova za sortiranje,&lt;ENTER&gt;-kraj\n&quot;,MAX);<br />
+while(gets(str[i])!=NULL  &amp;&amp; strcmp(str[i],STOP)!=0 &amp;&amp; i&lt;MAX)<br />
+{<br />
+pokstr[i]=str[i];<br />
+i++;<br />
+}<br />
+sort(pokstr,i);<br />
+for(j=O;j&lt;i;j++)<br />
+ puts(pokstr[j]);<br />
+ }<br />
+void  sort(char *st[],int n)<br />
+ {<br />
+ char *pom;<br />
+int i,j; <br />
+for(i=0;i&lt;n-l;i++)<br />
+ for(j=i+1;j&lt;n;j++)<br />
+if(strcmp(st[i],st[j]&gt;0)<br />
+{<br />
+pom=st[i];<br />
+st[i]=st[j];<br />
+st[j]=pom;<br />
+}<br />
+}</span></p>      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/zadatak%2024.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

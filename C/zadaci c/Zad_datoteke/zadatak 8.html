@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%208.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style12 {
+	color: #9999FF;
+	font-weight: bold;
+}
+.style17 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+	color: #000000;
+}
+.style18 {font-size: 16px; color: #000000; font-family: "Courier New", Courier, mono;}
+-->
+</style>
+</head>
+
+<body>
+<table width="79%" border="0" align="center">
+  <tr>
+    <td><p class="style1"><span class="style12">Zadatak 8:</span> <a href="../zadaci_datoteke.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style17">I NA&#268;IN</p>
+      <p class="style17">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;  //Zbog exit()<br />
+        #include&lt;conio.h&gt;<br />
+        #include&lt;string.h&gt;<br />
+        #define MAXL 60</p>
+      <p class="style18">void main()<br /> 
+        {<br />
+        FILE *ulaz, *izlaz;<br />
+        char str[MAXL];<br />
+        int i;<br />
+        if((ulaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\test1.txt&quot;, &quot;r&quot;)) == NULL)<br />
+        {<br />
+        printf(&quot;Ne mogu da otvorim datoteku \&quot;brojevi.dat\&quot;!\n&quot;);<br />
+        exit(1);<br />
+        }<br />
+        if((izlaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\test2.txt&quot;, &quot;w&quot;)) == NULL)<br />
+        {<br />
+        printf(&quot;Ne mogu da otvorim datoteku \&quot;brojevi.dat\&quot;!\n&quot;);<br />
+        exit(1);<br />
+        }<br />
+        while(fgets(str, MAXL,ulaz)!=NULL)<br />
+        {<br />
+        if(i&lt;strlen(str))<br />
+        fputc(str[i],izlaz);<br />
+        else fputc(' ',izlaz);<br />
+        fputc('\n',izlaz);<br />
+        }<br />
+        fclose(ulaz);<br />
+        fclose(izlaz);<br />
+        getch();<br />
+        }</p>
+      <p class="style18">II NA&#268;IN</p>
+      <p class="style17">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;  //Zbog exit()<br />
+        #include&lt;conio.h&gt;<br />
+        #include&lt;string.h&gt;<br />
+        #define MAXL 60</p>
+      <p class="style18">void main() <br />
+        {<br />
+        FILE *ulaz, *izlaz;<br />
+        char str[MAXL];<br />
+        char *maxs;<br />
+        strcpy(maxs,&quot;&quot;);<br />
+        if((ulaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\test1.txt&quot;, &quot;r&quot;)) == NULL)<br />
+        {<br />
+        printf(&quot;Ne mogu da otvorim datoteku \&quot;brojevi.dat\&quot;!\n&quot;);<br />
+        exit(1);<br />
+        }<br />
+        if((izlaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\test2.txt&quot;, &quot;w&quot;)) == NULL)<br />
+        {<br />
+        printf(&quot;Ne mogu da otvorim datoteku \&quot;brojevi.dat\&quot;!\n&quot;);<br />
+        exit(1);<br />
+        }<br />
+        while(fgets(str, MAXL,ulaz)!=NULL)<br />
+        {<br />
+        if(strlen(maxs)&lt;strlen(str))<br /> 
+        {<br />
+        strcpy(maxs,str);<br />
+        fputs(maxs,izlaz);<br />
+        }<br />
+        }<br />
+        fclose(ulaz);<br />
+        fclose(izlaz);<br />
+        getch();<br />
+        }</p>    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%208.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

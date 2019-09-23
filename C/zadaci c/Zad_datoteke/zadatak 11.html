@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%2011.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style11 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+.style13 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="87%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Zadatak 11:<a></a> <a href="../zadaci_datoteke.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style11">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;  //Zbog exit()<br />
+        #include&lt;conio.h&gt;</p>
+      <p class="style11">void main() {<br />
+        FILE *izlaz;<br />
+        int c, broj_linija = 0, max = 0, linija = 0, broj_char = 0;<br />
+        if((izlaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\test2.txt&quot;, &quot;r&quot;)) == NULL)<br />
+        exit(0);<br />
+        while((c = getc(izlaz)) != EOF) <br />
+        {<br />
+        if((c&gt;='0' &amp;&amp; c&lt;='9')||(c&gt;='A' &amp;&amp; c&lt;='Z')||(c&lt;='\t' &amp;&amp; c!=' '))<br />
+        broj_char++;<br />
+        if(c=='\n')<br />
+        {<br />
+        broj_linija++;<br />
+        if(broj_char &gt; max)<br /> 
+        {<br />
+        max = broj_char;<br />
+        linija = broj_linija;<br />
+        }<br />
+        broj_char=0;<br />
+        linija++;<br />
+        }<br />
+        }<br />
+        printf(&quot;U datoteci\&quot;test2.txt\&quot;linija najvece duzine je %d.\n&quot;,linija);<br />
+        printf(&quot; a po redu je %d\n&quot;,linija);<br />
+        fclose(izlaz);<br />
+        getch();<br />
+        }</p>
+      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%2011.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

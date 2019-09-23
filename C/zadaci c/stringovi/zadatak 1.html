@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/zadatak%201.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:01 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+.style2 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 18px;
+}
+.style5 {font-family: "Times New Roman", Times, serif; font-size: 18px; }
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style6 {font-size: 18px}
+.style7 {font-family: "Courier New", Courier, mono}
+.style8 {font-family: "Times New Roman", Times, serif}
+-->
+</style>
+</head>
+
+<body>
+<table width="79%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Zadatak 1:<a></a> <a href="../zadaci_stringovi.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style6"><span class="style7">main()<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (palindrom(&quot;ANA VOLIMILOVANA  &quot;))<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;string 1 je  palindrom\n&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (palindrom(&quot;ASTERIX&quot;))<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf{&quot;string 2 je palindrom\n&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><br />
+        <span class="style8"><br />
+        Problem re&scaron;ava slede&#263;a  funkcija:</span></p>
+      <p class="style2">int  palindrom(char *strpok)<br />
+        (<br />
+        char  *strpok1=strpok;<br />
+        while  (*strpok1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* pronalazi kraj stringa */ <br />
+        ++strpokl;  .<br />
+        --strpokl;&nbsp;   /*povratak  unazad za jedan znak */<br />
+        while  (strpok&lt;strpokl)&nbsp; .<br />
+        if  (*strpok++!=*strpokl--) &nbsp;&nbsp;/* pore&#273;enje simetri&#269;nih znakova */ <br />
+        return  0;<br />
+        return  1;<br />
+    }</p>
+    <p align="justify" class="style5">Funkcija ima dva pokaziva&#269;a: <em>strpok</em> koji  pokazuje na nulti element stringa, i <em>strpokl</em> koji se kre&#263;e kroz string  dok ne prona&#273;e zavrsni znak ('\0'), zatim se vrati za jedan znak nazad da bi  pokazivao na poslednji znak stringa. Dalje se porede znaci na&nbsp; koje pokazuju ova dva pokaziva&#269;a koji se  kre&#263;u jedan ka drugom. Ako se susretnu string je palindrom.</p>
+    </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/stringovi/zadatak%201.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:01 GMT -->
+</html>

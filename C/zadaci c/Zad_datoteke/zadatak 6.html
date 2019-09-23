@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%206.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style10 {
+	color: #9999FF;
+	font-weight: bold;
+}
+.style13 {font-size: 16px; color: #000000; font-family: "Courier New", Courier, mono;}
+-->
+</style>
+</head>
+
+<body>
+<table width="79%" border="0" align="center">
+  <tr>
+    <td><p class="style1"><span class="style10">Zadatak 6:</span> <a href="../zadaci_datoteke.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style13">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;<br />
+        #include&lt;conio.h&gt;</p>
+      <p class="style13">void stampaj(char *s)<br /> 
+        {<br />
+        char *s1;<br />
+        s1 = s;<br />
+        while(*s1)<br />
+        s1++;<br />
+        s1--;<br />
+        while(s1 &gt;= s)<br /> 
+        {<br />
+        putchar(*s1);<br />
+        s1--;<br />
+        }<br />
+        putchar('\n');<br />
+        return;<br />
+      }</p>
+      <p class="style13"> main() <br />
+        {<br />
+        FILE *ulaz, *izlaz;<br />
+        int max;<br />
+        char s[256];<br />
+        if((ulaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\poruka.txt&quot;, &quot;r&quot;)) == NULL) <br />
+        {<br />
+        printf(&quot;Ne mogu da otvorim datoteku \&quot;poruka.txt\&quot;!\n&quot;);<br />
+        exit(1);<br />
+        }<br />
+        while(fgets(s, 256, ulaz) != NULL)<br /> 
+        {<br />
+        stampaj(s);<br />
+        }<br />
+        fclose(ulaz);<br />
+        getch();<br />
+      }</p>      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%206.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

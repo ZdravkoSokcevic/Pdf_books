@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%2013.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style15 {font-family: "Courier New", Courier, mono}
+-->
+</style>
+</head>
+
+<body>
+<table width="87%" border="0" align="center">
+  <tr>
+    <td><p class="style1">Zadatak 13:<a></a> <a href="../zadaci_datoteke.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style15">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;  //Zbog exit()<br />
+        #include&lt;conio.h&gt;</p>
+      <p class="style15">void main() <br />
+        {<br />
+        FILE *izlaz;<br />
+        int c;<br />
+        if((izlaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\film.gif&quot;, &quot;w&quot;)) == NULL)<br />
+        exit(0);<br />
+        while((c = getchar()) != EOF)<br />
+        putc(c, izlaz);<br />
+        fclose(izlaz);<br />
+        getch();<br />
+        }</p>      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%2013.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

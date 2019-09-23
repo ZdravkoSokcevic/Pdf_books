@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%209.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+.style11 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+.style12 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 16px;
+}
+.style13 {
+	color: #9999FF;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="87%" border="0" align="center">
+  <tr>
+    <td><p class="style1"><span class="style13">Zadatak 9:</span> <a href="../zadaci_datoteke.html"><img src="../../Images/dugme_nazad.gif" alt="vrati se" width="25" height="25" border="0" /></a></p>
+      <p class="style11">#include&lt;stdio.h&gt;<br />
+        #include&lt;stdlib.h&gt;  //Zbog exit()<br />
+        #include&lt;conio.h&gt;</p>
+      <p class="style11">void main() <br />
+        {<br />
+        FILE *izlaz;<br />
+        int c, duzina = 0, max = 0, linija = 0, lin = 0;<br />
+        if((izlaz = fopen(&quot;C:\\mydocu~1\\kaja\\zadaci\\poruka.txt&quot;, &quot;r&quot;)) == NULL)<br />
+        exit(0);<br />
+        while((c = getc(izlaz)) != EOF) <br />
+        {<br />
+        if(c == '\n') {<br />
+        if(duzina &gt; max)<br /> 
+        {<br />
+        max = duzina;<br />
+        linija = lin;<br />
+        duzina = 0;<br />
+        lin++;<br />
+        }<br />
+        }<br />
+        duzina++;<br />
+        }<br />
+        printf(&quot;U datoteci \&quot;poruka.txt\&quot; linija najvece duzine je linija %d.\n&quot;, linija);<br />
+        fclose(izlaz);<br />
+        getch();<br />
+        }<br /></p>      </td>
+  </tr>
+</table>
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/Zad_datoteke/zadatak%209.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:30:02 GMT -->
+</html>

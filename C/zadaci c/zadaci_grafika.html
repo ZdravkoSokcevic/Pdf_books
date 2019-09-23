@@ -1,0 +1,97 @@
+<html>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/zadaci_grafika.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:29:20 GMT -->
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<title>· operacije, izrazi i operatori</title>
+<style>
+<!--
+.Section1
+	{page:Section1;}
+.Zadatak {font-size: medium}
+.Program {
+	font-size: medium;
+	font-family: "Courier New", Courier, mono;
+	font-weight: bold;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.MsoNormal {
+margin:0cm;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman";
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.style1 {color: #0000FF}
+-->
+</style>
+<link href="../Stilovi.css" rel="stylesheet" type="text/css"></head>
+<body bgcolor="#FFFFFF" link=blue vlink=purple class="Normal" lang=EN-US>
+<div id="Layer6" style="position: absolute; left: 10px; top: 15px; width: 751px; height: 926px; z-index: 6"><div class=Section1> 
+  <p class="Zadatak"><a href="../index.htm" class="style1">Sadr<span lang=SR-CYR>žaj</span></a> </p>
+  <p class="Naslov">Grafika</p>
+  <p class="Zadatak"><span class="Tekst">1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;</span>Napisati program koji u tekstualnom režimu iscrtava pravougaonik sa koordinatama (5,10) i (15,15) u žutoj boji. (<a href="Grafika/Z1_GRAF.C">Rešenje</a>) </p>
+  <p class="Zadatak">2. Napiši program koji iscrtava n pravougaonika sa koordinatama (x1,y1), (x2,y2) i boje c. Koordinate se biraju metodom slučajnog izbora i to x1: od 1 do 75, y1 od 1 do 20, x2 od 5 do 80, y2 od 5 do 25 i boja c od 1 do 15. (Rešenje) </p>
+  <p class="Zadatak">3. Napisati program koji isrtava po celom ekranu horizontalne linije razlicitih boja. (<a href="Grafika/Z3_graf.c">Rešenje</a>) </p>
+  <p class="Zadatak">4. Napiši program koji crta kvadrat sa temenom u gornjem levom uglu (x1,y1) i duzinom stranice l. (<a href="Grafika/Z4a_graph.c">Rešene</a>)</p>
+  <p class="Zadatak">5.  Napiši program koji koristeći prethodni zadatak iscrtava 100 koncentricnih kvadratapomerenih za dva pixela u odnosu na prethodni. (<a href="Grafika/Z5B_GRAP.C">Rešenje</a>)</p>
+  <p class="Zadatak">6. Napiši program koji iscrtava tačke po ekranu, pri čemu svaka tačka ima slučajni odabrane koordinate i boju. (<a href="Grafika/Z6_GRAPH.C">Rešenje</a>) </p>
+  <p class="Zadatak">6a. Korisreći prethodni zadatak ograničiti da slučajno iscrtavanje tačaka ima odeređenu boju i to:<br>
+  - ako je y koordinata manja ili jednaka 160, boja tačke je crvena<br>
+    -ako je y koordinata veca od 160 a manja ili jednaka od 320 boja je plava<br>
+    -ako je y koordinata veca od 320 boja je bela.<br>
+    (<a href="Grafika/Z6a_graph.c">Rešenje</a>) </p>
+  <p class="Zadatak">7.Napiši program koji iscrtava horizontalne i vertikalne linije po celom ekranu sa razmakom od 10 tačaka od linije do linije. (<a href="Grafika/Z7_GRAPH.C">Rešenje</a>) </p>
+  <p class="Zadatak">8. Napiši program koji crta 100 slučajno odabranih pravougaonika različitih boja. (<a href="Grafika/Z8_GRAPH.C">Rešenje</a>) </p>
+  <p class="Zadatak">9. Napiši program koji crta pravougaonika, a zatim ga popunjava kosim linijama različitih boja. <br>
+    (<a href="Grafika/Z9_GRAPH.C">Rešenje</a>) </p>
+  <p class="Zadatak">10. Napiši program koji simulira uvećavanje kruga (<a href="Grafika/Z10_graph.c">Rešenje</a>) </p>
+  <p class="Zadatak">11. Napiši program koji iscrtava i pomera pravougaonik od tačke A(x1,z1), do tačke B(x2,y2), ako linija AB :</p>
+  <table width="90%" border="0">
+    <tr>
+      <td><span class="Zadatak">a) prava tj A(x1,y) , B(x2,y)</span></td>
+      <td><span class="Zadatak">(<a href="Grafika/Z11a_grap.c">Rešenje</a>)</span></td>
+    </tr>
+    <tr>
+      <td><span class="Zadatak">b) kosa linija pod uglom 45%, tj A(x1,y1), B(x1+m, y1+m)</span></td>
+      <td><span class="Zadatak">(Rešenje)</span></td>
+    </tr>
+    <tr>
+      <td><span class="Zadatak">c) kada su koordinate tačaka A i B proizvoljne. </span></td>
+      <td><span class="Zadatak">(Rešenje)</span></td>
+    </tr>
+  </table>
+  <p class="Zadatak">12. Napiši program koji učitava koordinate n tačaka A1(x1,y1), . . . , An(xn,yn). U programu se zatim izvršava kretanje kruga poluprečnika 50 piksela po izlomljenoj liniji A1A2...An. <br>
+  a) za n =2 (<a href="Grafika/Z12A_GRA.C">Rešenje</a>)<br>
+    b) za n proizvoljno uneti broj
+</p>
+  <p class="Zadatak">13.Napiši program koji iscrtava trougao a zatim ga pomera po horizontalnoj liniji dužine 200 piksela. (Rešenje) </p>
+  <p class="Zadatak">14.Napiši program koji iscrtava <strong>n</strong> slučajno odabranih pravougaonika, <strong>m</strong> slučajno odabranih krugova i <strong>k </strong> slučajno odabranih linija. Pri slučajnom izboru elemenata paziti da svaki lik bude vidljiv na ekranu. (Rešenje) </p>
+  <p class="Zadatak">15.Napiši program koji koristeći tastere strelica pomera krug poluprečnika riscrtava ekran. (<a href="Grafika/Z15_GRAP.C">Rešenje</a>) </p>
+  <p class="Zadatak">16. Napiši program koji crta n koncentričnih krigova čiji je poluprečnik slučajno odabran broj.</p>
+  <p class="Zadatak">17. Napiši program koji iscrtava krugove slučajno odabranog centra i poluprečnika (10-100). Program prekida rad kada se iscrta krug koji nije u celini vidljiv na ekranu. </p>
+  <p class="Zadatak">18. Napiši program koji iscrtava četvorougao sa proizvoljnim koordinatama, a zarim ga pokreće tako što menja koordinate temena za +1 ili -1. temena se odbijaju od ivice ekrana tako da nemogu da &quot;izađu2 sa ekrana. (<a href="Grafika/Z18_GRAP.C">Rešenje</a>) </p>
+  <p class="Zadatak">19. Napiši program koji iscrtava mrežu pravougaonika, 10 po horizontali i 10 po vertikali. Posle toga izborom brojeva (x,y) boji pravougaonik sa pozicije x i y na ekranu. (<a href="Grafika/Z19_GRAP.C">Rešenje</a>) <br>
+    <br>
+    <br>
+  </p>
+</div></div>
+
+</body>
+
+<!-- Mirrored from tsms.kg.edu.yu/programiranje/zadaci_c/zadaci_grafika.html by HTTrack Website Copier/3.x [XR&CO'2004], Fri, 10 Aug 2007 12:29:20 GMT -->
+</html>
